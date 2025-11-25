@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,34 +10,29 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             transition: background-color 0.3s, color 0.3s;
         }
-
         body {
             background-color: #f5f5f5;
             margin: 0;
             padding: 20px;
             color: #333;
         }
-
         body.dark-mode {
             background-color: #1a1a1a;
             color: #f0f0f0;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             overflow: hidden;
             position: relative;
         }
-
         .dark-mode .container {
             background-color: #2d2d2d;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
-
         header {
             background-color: #25D366;
             color: white;
@@ -46,25 +40,22 @@
             text-align: center;
             position: relative;
         }
-
         h1 {
             margin: 0;
             font-size: 1.5rem;
         }
-
         .author-credit {
             font-size: 0.8rem;
             opacity: 0.9;
             margin-top: 5px;
             font-style: italic;
         }
-
         .theme-toggle {
             position: absolute;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255,255,255,0.2);
             border: none;
             border-radius: 20px;
             padding: 5px 10px;
@@ -74,28 +65,21 @@
             align-items: center;
             gap: 5px;
         }
-
         .form-container {
             padding: 20px;
         }
-
         .form-group {
             margin-bottom: 15px;
         }
-
         label {
             display: block;
             margin-bottom: 5px;
             font-weight: 600;
         }
-
         .dark-mode label {
             color: #f0f0f0;
         }
-
-        input,
-        select,
-        textarea {
+        input, select, textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ddd;
@@ -104,32 +88,24 @@
             background-color: white;
             color: #333;
         }
-
-        .dark-mode input,
-        .dark-mode select,
-        .dark-mode textarea {
+        .dark-mode input, .dark-mode select, .dark-mode textarea {
             background-color: #3d3d3d;
             border-color: #555;
             color: #f0f0f0;
         }
-
         textarea {
             min-height: 100px;
             resize: vertical;
         }
-
         .list-input {
             display: flex;
             margin-bottom: 5px;
             position: relative;
         }
-
-        .list-input input,
-        .list-input select {
+        .list-input input, .list-input select {
             flex-grow: 1;
             margin-right: 5px;
         }
-
         .add-btn {
             background-color: #25D366;
             color: white;
@@ -139,11 +115,9 @@
             cursor: pointer;
             z-index: 2;
         }
-
         .list-items {
             margin-top: 10px;
         }
-
         .list-item {
             display: flex;
             justify-content: space-between;
@@ -152,40 +126,33 @@
             border-radius: 5px;
             margin-bottom: 5px;
         }
-
         .dark-mode .list-item {
             background-color: #3d3d3d;
         }
-
         .remove-btn {
             background: none;
             border: none;
             color: #ff4444;
             cursor: pointer;
         }
-
         .conditional-section {
             display: none;
             margin-top: 10px;
         }
-
         .preview-container {
             margin-top: 30px;
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 10px;
         }
-
         .dark-mode .preview-container {
             background-color: #3d3d3d;
         }
-
         .preview-title {
             font-weight: 600;
             margin-bottom: 10px;
             color: #25D366;
         }
-
         .preview-content {
             white-space: pre-line;
             background-color: white;
@@ -196,19 +163,16 @@
             max-height: 400px;
             overflow-y: auto;
         }
-
         .dark-mode .preview-content {
             background-color: #1a1a1a;
             border-color: #555;
             color: #f0f0f0;
         }
-
         .actions {
             display: flex;
             justify-content: space-between;
             margin-top: 20px;
         }
-
         .btn {
             padding: 12px 20px;
             border: none;
@@ -217,37 +181,31 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-
         .btn-primary {
             background-color: #25D366;
             color: white;
         }
-
         .btn-secondary {
             background-color: #6c757d;
             color: white;
         }
-
         .btn:hover {
             opacity: 0.9;
         }
-
         .suggested-options {
             margin-top: 5px;
             font-size: 0.9rem;
             color: #666;
         }
-
         .dark-mode .suggested-options {
             color: #aaa;
         }
-
+        
         /* Estilos para el autocompletado */
         .autocomplete-container {
             position: relative;
             width: 100%;
         }
-
         .autocomplete-input {
             width: 100%;
             padding: 10px;
@@ -255,13 +213,11 @@
             border-radius: 5px;
             font-size: 1rem;
         }
-
         .dark-mode .autocomplete-input {
             background-color: #3d3d3d;
             border-color: #555;
             color: #f0f0f0;
         }
-
         .autocomplete-list {
             position: absolute;
             top: 100%;
@@ -276,40 +232,33 @@
             z-index: 1000;
             display: none;
         }
-
         .dark-mode .autocomplete-list {
             background: #3d3d3d;
             border-color: #555;
             color: #f0f0f0;
         }
-
         .autocomplete-item {
             padding: 10px;
             cursor: pointer;
             border-bottom: 1px solid #eee;
         }
-
         .dark-mode .autocomplete-item {
             border-bottom: 1px solid #555;
         }
-
         .autocomplete-item:hover {
             background-color: #f0f0f0;
         }
-
         .dark-mode .autocomplete-item:hover {
             background-color: #4d4d4d;
         }
-
         .autocomplete-item:last-child {
             border-bottom: none;
         }
-
         .autocomplete-highlight {
             font-weight: bold;
             color: #25D366;
         }
-
+        
         /* Estilos para el footer con créditos */
         .footer-credits {
             text-align: center;
@@ -319,33 +268,29 @@
             font-size: 0.9rem;
             color: #666;
         }
-
         .dark-mode .footer-credits {
             border-top: 1px solid #555;
             color: #aaa;
         }
-
         .footer-credits a {
             color: #25D366;
             text-decoration: none;
         }
-
         .footer-credits a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
             <h1>Formulario de Reporte de Equipos</h1>
-            <div class="author-credit">By J!mm</div>
+            <div class="author-credit">By j!mm</div>
             <button class="theme-toggle" id="themeToggle">
                 <span id="themeIcon">🌙</span> <span id="themeText">Modo Oscuro</span>
             </button>
         </header>
-
+        
         <div class="form-container">
             <form id="whatsappForm">
                 <div class="form-group">
@@ -365,12 +310,15 @@
                         <option value="TL - 01">TL - 01</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="presenta">*PRESENTA:*</label>
-                    <input type="text" id="presenta" placeholder="Ingrese el nombre" required>
+                    <div class="autocomplete-container">
+                        <input type="text" id="presenta" class="autocomplete-input" placeholder="Escriba o seleccione una opción" required>
+                        <div class="autocomplete-list" id="presentaAutocomplete"></div>
+                    </div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="turno">*TURNO:*</label>
                     <select id="turno" required>
@@ -379,27 +327,27 @@
                         <option value="NOCHE">NOCHE</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="fecha">*FECHA:*</label>
                     <input type="date" id="fecha" required>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="horaInicio">*HORA INICIO:*</label>
                     <input type="time" id="horaInicio" required>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="horaFin">*HORA FIN:*</label>
                     <input type="time" id="horaFin" required>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="horometro">*HOROMETRO:*</label>
                     <input type="number" id="horometro" placeholder="Ingrese el horómetro" required>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="supervisor">*SUPERVISOR:*</label>
                     <select id="supervisor" required>
@@ -407,10 +355,9 @@
                         <option value="Abimael Flores">Abimael Flores</option>
                         <option value="Otro">Otro</option>
                     </select>
-                    <input type="text" id="supervisorOtro" placeholder="Ingrese otro supervisor"
-                        style="display: none; margin-top: 5px;">
+                    <input type="text" id="supervisorOtro" placeholder="Ingrese otro supervisor" style="display: none; margin-top: 5px;">
                 </div>
-
+                
                 <div class="form-group">
                     <label>*TECNICOS:*</label>
                     <div class="list-input">
@@ -419,20 +366,19 @@
                     </div>
                     <div class="list-items" id="tecnicosList"></div>
                 </div>
-
+                
                 <div class="form-group">
                     <label>*TRABAJOS REALIZADOS:*</label>
                     <div class="list-input">
                         <div class="autocomplete-container">
-                            <input type="text" id="trabajoInput" class="autocomplete-input"
-                                placeholder="Escriba o seleccione un trabajo">
+                            <input type="text" id="trabajoInput" class="autocomplete-input" placeholder="Escriba o seleccione un trabajo">
                             <div class="autocomplete-list" id="trabajoAutocomplete"></div>
                         </div>
                         <button type="button" class="add-btn" id="addTrabajo">+</button>
                     </div>
                     <div class="list-items" id="trabajosList"></div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="aprovechamiento">*APROVECHAMIENTO:*</label>
                     <select id="aprovechamiento">
@@ -441,7 +387,7 @@
                         <option value="NO">NO</option>
                     </select>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="demoras">*DEMORAS:*</label>
                     <select id="demoras">
@@ -457,7 +403,7 @@
                         <div class="list-items" id="demorasList"></div>
                     </div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="observaciones">*OBSERVACIONES:*</label>
                     <select id="observaciones">
@@ -473,7 +419,7 @@
                         <div class="list-items" id="observacionesList"></div>
                     </div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="relevo">*RELEVO:*</label>
                     <select id="relevo">
@@ -489,7 +435,7 @@
                         <div class="list-items" id="relevoList"></div>
                     </div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="equipoOperativo">*EQUIPO OPERATIVO:*</label>
                     <select id="equipoOperativo" required>
@@ -499,40 +445,39 @@
                     </select>
                 </div>
             </form>
-
+            
             <div class="preview-container">
                 <div class="preview-title">Vista Previa del Mensaje:</div>
                 <div class="preview-content" id="preview"></div>
             </div>
-
+            
             <div class="actions">
                 <button type="button" class="btn btn-secondary" id="clearForm">Limpiar Formulario</button>
                 <button type="button" class="btn btn-primary" id="generateWhatsApp">Generar WhatsApp</button>
             </div>
-
+            
             <!-- Footer con créditos -->
             <div class="footer-credits">
-                By <strong>J!mm</strong> |
-                <a href="https://github.com/tuusuario/turepositorio" target="_blank">Ver</a>
+                By <strong>j!mm</strong> | 
+                <a href="https://github.com/tuusuario/turepositorio" target="_blank">Ver código en GitHub</a>
             </div>
         </div>
     </div>
 
     <script>
-        // [Todo el código JavaScript anterior permanece igual]
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             // Establecer fecha actual por defecto
             const today = new Date();
             const formattedDate = today.toISOString().split('T')[0];
             document.getElementById('fecha').value = formattedDate;
-
+            
             // Arrays para almacenar elementos de lista
             const tecnicos = [];
             const trabajos = [];
             const demoras = [];
             const observaciones = [];
             const relevos = [];
-
+            
             // Lista de trabajos sugeridos
             const trabajosSugeridos = [
                 "Inspección de niveles de fluidos.",
@@ -549,37 +494,45 @@
                 "Se realiza limpieza de sensores ODS.",
                 "Limpieza de plataforma de perforación."
             ];
-
+            
+            // Lista de opciones para PRESENTA
+            const presentaOpciones = [
+                "Inspección de equipo",
+                "Mantenimiento programado"
+            ];
+            
             // Referencias a elementos del DOM
             const tecnicoInput = document.getElementById('tecnicoInput');
             const trabajoInput = document.getElementById('trabajoInput');
             const trabajoAutocomplete = document.getElementById('trabajoAutocomplete');
+            const presentaInput = document.getElementById('presenta');
+            const presentaAutocomplete = document.getElementById('presentaAutocomplete');
             const demoraInput = document.getElementById('demoraInput');
             const observacionInput = document.getElementById('observacionInput');
             const relevoInput = document.getElementById('relevoInput');
-
+            
             const tecnicosList = document.getElementById('tecnicosList');
             const trabajosList = document.getElementById('trabajosList');
             const demorasList = document.getElementById('demorasList');
             const observacionesList = document.getElementById('observacionesList');
             const relevoList = document.getElementById('relevoList');
-
+            
             // Función para capitalizar solo la primera letra de la primera palabra
             function capitalizarPrimeraPalabra(texto) {
                 if (!texto) return texto;
                 return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
             }
-
+            
             // Función para capitalizar nombres de personas (primera letra de cada palabra)
             function capitalizarNombre(texto) {
-                return texto.replace(/\b\w/g, function (l) {
-                    return l.toUpperCase();
+                return texto.replace(/\b\w/g, function(l) { 
+                    return l.toUpperCase(); 
                 });
             }
-
+            
             // Función para capitalizar texto al perder el foco
             function capitalizarAlPerderFoco(input, esNombrePersona = false) {
-                input.addEventListener('blur', function () {
+                input.addEventListener('blur', function() {
                     if (this.value) {
                         if (esNombrePersona) {
                             this.value = capitalizarNombre(this.value);
@@ -590,17 +543,87 @@
                     }
                 });
             }
-
+            
             // Aplicar capitalización a los campos de texto
-            capitalizarAlPerderFoco(document.getElementById('presenta'));
             capitalizarAlPerderFoco(tecnicoInput, true); // Para nombres de personas
             capitalizarAlPerderFoco(demoraInput);
             capitalizarAlPerderFoco(observacionInput);
             capitalizarAlPerderFoco(relevoInput);
             capitalizarAlPerderFoco(document.getElementById('supervisorOtro'));
-
+            
+            // Sistema de autocompletado para PRESENTA
+            presentaInput.addEventListener('input', function() {
+                const value = this.value.toLowerCase();
+                if (value.length > 0) {
+                    const filtered = presentaOpciones.filter(opcion => 
+                        opcion.toLowerCase().includes(value)
+                    );
+                    showPresentaAutocomplete(filtered, value);
+                } else {
+                    hidePresentaAutocomplete();
+                }
+            });
+            
+            presentaInput.addEventListener('focus', function() {
+                const value = this.value.toLowerCase();
+                if (value.length > 0) {
+                    const filtered = presentaOpciones.filter(opcion => 
+                        opcion.toLowerCase().includes(value)
+                    );
+                    showPresentaAutocomplete(filtered, value);
+                } else {
+                    showPresentaAutocomplete(presentaOpciones, '');
+                }
+            });
+            
+            // Función para mostrar sugerencias de autocompletado para PRESENTA
+            function showPresentaAutocomplete(suggestions, searchTerm) {
+                presentaAutocomplete.innerHTML = '';
+                
+                if (suggestions.length === 0) {
+                    hidePresentaAutocomplete();
+                    return;
+                }
+                
+                suggestions.forEach(suggestion => {
+                    const item = document.createElement('div');
+                    item.className = 'autocomplete-item';
+                    
+                    // Resaltar el texto coincidente
+                    let displayText = suggestion;
+                    if (searchTerm) {
+                        const regex = new RegExp(`(${searchTerm})`, 'gi');
+                        displayText = suggestion.replace(regex, '<span class="autocomplete-highlight">$1</span>');
+                    }
+                    
+                    item.innerHTML = displayText;
+                    
+                    item.addEventListener('click', function() {
+                        presentaInput.value = suggestion;
+                        hidePresentaAutocomplete();
+                        updatePreview();
+                    });
+                    
+                    presentaAutocomplete.appendChild(item);
+                });
+                
+                presentaAutocomplete.style.display = 'block';
+            }
+            
+            // Función para ocultar el autocompletado de PRESENTA
+            function hidePresentaAutocomplete() {
+                presentaAutocomplete.style.display = 'none';
+            }
+            
+            // Ocultar autocompletado de PRESENTA al hacer clic fuera
+            document.addEventListener('click', function(e) {
+                if (!presentaInput.contains(e.target) && !presentaAutocomplete.contains(e.target)) {
+                    hidePresentaAutocomplete();
+                }
+            });
+            
             // Manejar selección de supervisor
-            document.getElementById('supervisor').addEventListener('change', function () {
+            document.getElementById('supervisor').addEventListener('change', function() {
                 const otroInput = document.getElementById('supervisorOtro');
                 if (this.value === 'Otro') {
                     otroInput.style.display = 'block';
@@ -611,12 +634,12 @@
                 }
                 updatePreview();
             });
-
+            
             // Sistema de autocompletado para trabajos
-            trabajoInput.addEventListener('input', function () {
+            trabajoInput.addEventListener('input', function() {
                 const value = this.value.toLowerCase();
                 if (value.length > 0) {
-                    const filtered = trabajosSugeridos.filter(trabajo =>
+                    const filtered = trabajosSugeridos.filter(trabajo => 
                         trabajo.toLowerCase().includes(value)
                     );
                     showAutocomplete(filtered, value);
@@ -624,11 +647,11 @@
                     hideAutocomplete();
                 }
             });
-
-            trabajoInput.addEventListener('focus', function () {
+            
+            trabajoInput.addEventListener('focus', function() {
                 const value = this.value.toLowerCase();
                 if (value.length > 0) {
-                    const filtered = trabajosSugeridos.filter(trabajo =>
+                    const filtered = trabajosSugeridos.filter(trabajo => 
                         trabajo.toLowerCase().includes(value)
                     );
                     showAutocomplete(filtered, value);
@@ -636,54 +659,54 @@
                     showAutocomplete(trabajosSugeridos, '');
                 }
             });
-
-            // Función para mostrar sugerencias de autocompletado
+            
+            // Función para mostrar sugerencias de autocompletado para TRABAJOS
             function showAutocomplete(suggestions, searchTerm) {
                 trabajoAutocomplete.innerHTML = '';
-
+                
                 if (suggestions.length === 0) {
                     hideAutocomplete();
                     return;
                 }
-
+                
                 suggestions.forEach(suggestion => {
                     const item = document.createElement('div');
                     item.className = 'autocomplete-item';
-
+                    
                     // Resaltar el texto coincidente
                     let displayText = suggestion;
                     if (searchTerm) {
                         const regex = new RegExp(`(${searchTerm})`, 'gi');
                         displayText = suggestion.replace(regex, '<span class="autocomplete-highlight">$1</span>');
                     }
-
+                    
                     item.innerHTML = displayText;
-
-                    item.addEventListener('click', function () {
+                    
+                    item.addEventListener('click', function() {
                         trabajoInput.value = suggestion;
                         hideAutocomplete();
                     });
-
+                    
                     trabajoAutocomplete.appendChild(item);
                 });
-
+                
                 trabajoAutocomplete.style.display = 'block';
             }
-
-            // Función para ocultar el autocompletado
+            
+            // Función para ocultar el autocompletado de TRABAJOS
             function hideAutocomplete() {
                 trabajoAutocomplete.style.display = 'none';
             }
-
-            // Ocultar autocompletado al hacer clic fuera
-            document.addEventListener('click', function (e) {
+            
+            // Ocultar autocompletado de TRABAJOS al hacer clic fuera
+            document.addEventListener('click', function(e) {
                 if (!trabajoInput.contains(e.target) && !trabajoAutocomplete.contains(e.target)) {
                     hideAutocomplete();
                 }
             });
-
+            
             // Funciones para agregar elementos a las listas
-            document.getElementById('addTecnico').addEventListener('click', function () {
+            document.getElementById('addTecnico').addEventListener('click', function() {
                 const value = tecnicoInput.value.trim();
                 if (value) {
                     tecnicos.push(capitalizarNombre(value)); // Capitalizar nombres de personas
@@ -692,8 +715,8 @@
                     updatePreview();
                 }
             });
-
-            document.getElementById('addTrabajo').addEventListener('click', function () {
+            
+            document.getElementById('addTrabajo').addEventListener('click', function() {
                 const value = trabajoInput.value.trim();
                 if (value) {
                     trabajos.push(capitalizarPrimeraPalabra(value)); // Solo primera palabra en mayúscula
@@ -703,8 +726,8 @@
                     updatePreview();
                 }
             });
-
-            document.getElementById('addDemora').addEventListener('click', function () {
+            
+            document.getElementById('addDemora').addEventListener('click', function() {
                 const value = demoraInput.value.trim();
                 if (value) {
                     demoras.push(capitalizarPrimeraPalabra(value)); // Solo primera palabra en mayúscula
@@ -713,8 +736,8 @@
                     updatePreview();
                 }
             });
-
-            document.getElementById('addObservacion').addEventListener('click', function () {
+            
+            document.getElementById('addObservacion').addEventListener('click', function() {
                 const value = observacionInput.value.trim();
                 if (value) {
                     observaciones.push(capitalizarPrimeraPalabra(value)); // Solo primera palabra en mayúscula
@@ -723,8 +746,8 @@
                     updatePreview();
                 }
             });
-
-            document.getElementById('addRelevo').addEventListener('click', function () {
+            
+            document.getElementById('addRelevo').addEventListener('click', function() {
                 const value = relevoInput.value.trim();
                 if (value) {
                     relevos.push(capitalizarPrimeraPalabra(value)); // Solo primera palabra en mayúscula
@@ -733,7 +756,7 @@
                     updatePreview();
                 }
             });
-
+            
             // Función para actualizar la visualización de listas
             function updateListDisplay(array, listElement) {
                 listElement.innerHTML = '';
@@ -746,10 +769,10 @@
                     `;
                     listElement.appendChild(listItem);
                 });
-
+                
                 // Agregar event listeners a los botones de eliminar
                 listElement.querySelectorAll('.remove-btn').forEach(button => {
-                    button.addEventListener('click', function () {
+                    button.addEventListener('click', function() {
                         const index = parseInt(this.getAttribute('data-index'));
                         array.splice(index, 1);
                         updateListDisplay(array, listElement);
@@ -757,33 +780,33 @@
                     });
                 });
             }
-
+            
             // Mostrar/ocultar secciones condicionales
-            document.getElementById('demoras').addEventListener('change', function () {
-                document.getElementById('demorasSection').style.display =
+            document.getElementById('demoras').addEventListener('change', function() {
+                document.getElementById('demorasSection').style.display = 
                     this.value === 'SI' ? 'block' : 'none';
                 updatePreview();
             });
-
-            document.getElementById('observaciones').addEventListener('change', function () {
-                document.getElementById('observacionesSection').style.display =
+            
+            document.getElementById('observaciones').addEventListener('change', function() {
+                document.getElementById('observacionesSection').style.display = 
                     this.value === 'SI' ? 'block' : 'none';
                 updatePreview();
             });
-
-            document.getElementById('relevo').addEventListener('change', function () {
-                document.getElementById('relevoSection').style.display =
+            
+            document.getElementById('relevo').addEventListener('change', function() {
+                document.getElementById('relevoSection').style.display = 
                     this.value === 'SI' ? 'block' : 'none';
                 updatePreview();
             });
-
+            
             // Actualizar vista previa cuando cambien los campos
             const formElements = document.querySelectorAll('#whatsappForm input, #whatsappForm select, #whatsappForm textarea');
             formElements.forEach(element => {
                 element.addEventListener('input', updatePreview);
                 element.addEventListener('change', updatePreview);
             });
-
+            
             // Función para actualizar la vista previa
             function updatePreview() {
                 const equipo = document.getElementById('equipo').value;
@@ -793,24 +816,24 @@
                 const horaInicio = document.getElementById('horaInicio').value;
                 const horaFin = document.getElementById('horaFin').value;
                 const horometro = document.getElementById('horometro').value;
-
+                
                 let supervisor = document.getElementById('supervisor').value;
                 if (supervisor === 'Otro') {
                     supervisor = document.getElementById('supervisorOtro').value;
                 }
-
+                
                 const aprovechamiento = document.getElementById('aprovechamiento').value;
                 const demoras = document.getElementById('demoras').value;
                 const observaciones = document.getElementById('observaciones').value;
                 const relevo = document.getElementById('relevo').value;
                 const equipoOperativo = document.getElementById('equipoOperativo').value;
-
+                
                 // Formatear fecha
                 const fechaObj = new Date(fecha);
                 const formattedFecha = fechaObj.toLocaleDateString('es-ES');
-
+                
                 let previewText = '';
-
+                
                 previewText += `*EQUIPO:* ${equipo}\n`;
                 previewText += `*PRESENTA:* ${presenta}\n`;
                 previewText += `*TURNO:* ${turno}\n`;
@@ -819,7 +842,7 @@
                 previewText += `*HORA FIN:* ${horaFin}\n`;
                 previewText += `*HOROMETRO:* ${horometro}\n`;
                 previewText += `*SUPERVISOR:* ${supervisor}\n`;
-
+                
                 previewText += `*TECNICOS:*\n`;
                 if (tecnicos.length > 0) {
                     tecnicos.forEach(tecnico => {
@@ -828,7 +851,7 @@
                 } else {
                     previewText += `- \n`;
                 }
-
+                
                 previewText += `*TRABAJOS REALIZADOS:*\n`;
                 if (trabajos.length > 0) {
                     trabajos.forEach(trabajo => {
@@ -837,85 +860,86 @@
                 } else {
                     previewText += `- \n`;
                 }
-
+                
                 previewText += `*APROVECHAMIENTO:* ${aprovechamiento}\n`;
-
+                
                 previewText += `*DEMORAS:* ${demoras}\n`;
                 if (demoras === 'SI' && demorasList.querySelectorAll('.list-item').length > 0) {
                     document.querySelectorAll('#demorasList .list-item span').forEach(item => {
                         previewText += `${item.textContent}\n`;
                     });
                 }
-
+                
                 previewText += `*OBSERVACIONES:* ${observaciones}\n`;
                 if (observaciones === 'SI' && observacionesList.querySelectorAll('.list-item').length > 0) {
                     document.querySelectorAll('#observacionesList .list-item span').forEach(item => {
                         previewText += `${item.textContent}\n`;
                     });
                 }
-
+                
                 previewText += `*RELEVO:* ${relevo}\n`;
                 if (relevo === 'SI' && relevoList.querySelectorAll('.list-item').length > 0) {
                     document.querySelectorAll('#relevoList .list-item span').forEach(item => {
                         previewText += `${item.textContent}\n`;
                     });
                 }
-
+                
                 previewText += `*EQUIPO OPERATIVO:* ${equipoOperativo}`;
-
+                
                 document.getElementById('preview').textContent = previewText;
             }
-
+            
             // Generar enlace de WhatsApp
-            document.getElementById('generateWhatsApp').addEventListener('click', function () {
+            document.getElementById('generateWhatsApp').addEventListener('click', function() {
                 const previewText = document.getElementById('preview').textContent;
                 const encodedText = encodeURIComponent(previewText);
                 const whatsappUrl = `https://wa.me/?text=${encodedText}`;
                 window.open(whatsappUrl, '_blank');
             });
-
+            
             // Limpiar formulario
-            document.getElementById('clearForm').addEventListener('click', function () {
+            document.getElementById('clearForm').addEventListener('click', function() {
                 document.getElementById('whatsappForm').reset();
-
+                
                 // Limpiar arrays y listas
                 tecnicos.length = 0;
                 trabajos.length = 0;
                 demoras.length = 0;
                 observaciones.length = 0;
                 relevos.length = 0;
-
+                
                 tecnicosList.innerHTML = '';
                 trabajosList.innerHTML = '';
                 demorasList.innerHTML = '';
                 observacionesList.innerHTML = '';
                 relevoList.innerHTML = '';
-
+                
                 // Ocultar secciones condicionales
                 document.getElementById('demorasSection').style.display = 'none';
                 document.getElementById('observacionesSection').style.display = 'none';
                 document.getElementById('relevoSection').style.display = 'none';
-
+                
                 // Ocultar campos "Otro"
                 document.getElementById('supervisorOtro').style.display = 'none';
-
-                // Ocultar autocompletado
+                
+                // Ocultar autocompletados
+                hidePresentaAutocomplete();
                 hideAutocomplete();
-
+                
                 // Restablecer fecha actual
                 document.getElementById('fecha').value = formattedDate;
-
+                
                 updatePreview();
             });
-
+            
             // Toggle de modo oscuro/claro
             const themeToggle = document.getElementById('themeToggle');
             const themeIcon = document.getElementById('themeIcon');
             const themeText = document.getElementById('themeText');
-
-            themeToggle.addEventListener('click', function () {
+            
+            themeToggle.addEventListener('click', function() {
                 document.body.classList.toggle('dark-mode');
-
+                
                 if (document.body.classList.contains('dark-mode')) {
                     themeIcon.textContent = '☀️';
                     themeText.textContent = 'Modo Claro';
@@ -924,11 +948,10 @@
                     themeText.textContent = 'Modo Oscuro';
                 }
             });
-
+            
             // Inicializar vista previa
             updatePreview();
         });
     </script>
 </body>
-
 </html>
